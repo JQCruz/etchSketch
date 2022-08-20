@@ -1,22 +1,39 @@
+html{
+    height: 100%;
+}
+
+p{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    font-family: 'Common Pixel', sans-serif;
+    background-color: lightskyblue;
+}
+
 #FlexContainer{
     display: flex;
     flex-direction: row;
+    margin: auto 0;
+    justify-content: center;
+    gap: 100px;
 }
 
-#userInputBox{
+.userInputBox{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
 }
 
 .header,
 .footer{
     display: flex;
     background-color: aqua;
-    height: 40px;
     justify-content: space-between;
-    padding: 0 10px;
-    color: rgb(187, 8, 8);
-
+    padding: 20px 10px;
+    color: rgb(49 134 148);
 }
 
 .gridContainer{
@@ -26,8 +43,7 @@
 
 .headerContent{
     margin: auto 0px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
 }
 
 .box{
@@ -53,6 +69,14 @@
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
   }
+  
+  #sizeOption{
+    transition: scale 0.5s;
+  }
+
+  #sizeOption:hover{
+    scale: 120%;
+  }
 
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
@@ -69,3 +93,50 @@
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+  #biggerContainer{
+    height: 980px;
+
+  }
+
+  #rainbowMode{
+    display: flex;
+    background-color: #303531;
+    justify-content: center;
+    height: 70px;
+    color: ivory;
+    align-items: center;
+    transition: scale .5s;
+
+  }
+
+  #rainbowMode:hover{
+    cursor: pointer;
+    scale: 120%;
+  }
+
+.footerContent{
+    font-family: serif
+}
+
+.footer{
+    padding: 10px 10px;
+}
+
+#rainbowModeBlack{
+    display: flex;
+    background-color: #303531;
+    justify-content: center;
+    height: 70px;
+    color: rgb(170, 170, 148);
+    align-items: center;
+    transition: scale .5s;
+
+  }
+
+  #rainbowModeBlack:hover{
+    cursor: pointer;
+    background-color: #181a19;
+    scale: 120%;
+  }
+  
